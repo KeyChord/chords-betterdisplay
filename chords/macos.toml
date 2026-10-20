@@ -1,0 +1,8 @@
+name = 'BetterDisplay'
+
+[on.monitor]
+file = 'monitor.js'
+
+[chords]
+'?/md' = { name = 'Monitor: Dimensions' }
+'/md(.+)' = { name = 'Monitor: Dimensions (Set)', '@input:monitor' = ['$1'] }
